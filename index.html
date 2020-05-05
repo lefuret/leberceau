@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Titre et description du site -->
+        <title>Le Berceau de l’Égalité | Le Furet</title>
+        <meta name="description" content="Découvrez notre matériel pédagogique pour accompagner les enfants dans la découverte de la diversité. Réservez gratuitement dès aujourd'hui votre mallette !">
+        <meta name="keywords" content="petite enfance, discrimination, éducation">
+        <meta name="author" content="Le Furet Petite Enfance & Diversité">
+
+        <!-- OpenGraph -->
+        <meta property="og:image:width" content="1600">
+        <meta property="og:image:height" content="838">
+        <meta property="og:description" content="Le Berceau de l'&Eacute;galit&eacute;, une mallette p&eacute;dagogique pour d&eacute;couvrir la diversit&eacute;, d&egrave;s le plus jeune &acirc;ge, &agrave; travers les sens, les &eacute;motions, la musique, les mots et les histoires... Une initiative de l'association Le Furet.">
+        <meta property="og:title" content="Le Berceau de l&rsquo;&Eacute;galit&eacute;">
+        <meta property="og:url" content="http://leberceau.lefuret.org">
+        <meta property="og:image" content="http://leberceau.lefuret.org/img/og-image.jpg">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+        <link rel="manifest" href="/img/icons/site.webmanifest">
+        <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#39f">
+        <link rel="shortcut icon" href="/img/icons/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="Le Berceau de l&rsquo;&Eacute;galit&eacute;">
+        <meta name="application-name" content="Le Berceau de l&rsquo;&Eacute;galit&eacute;">
+        <meta name="msapplication-TileColor" content="#39f">
+        <meta name="msapplication-config" content="/img/icons/browserconfig.xml">
+        <meta name="theme-color" content="#fff">  
+
+        <!-- Feuilles de styles -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/uikit.min.css">
+
+        <!-- Impression & export PDF -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>        
+
+        <!-- Polices -->
+        <style type="text/css">
+            @font-face {
+                font-family: "ayanami";
+                src: url("fonts/ayanami/ayanami.woff2") format("woff2"), url("fonts/ayanami/ayanami.woff") format("woff");
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: "quicksand";
+                src: url("fonts/quicksand/quicksand-regular.woff2") format("woff2"), url("fonts/quicksand/quicksand-regular.woff") format("woff");
+                font-weight: 400;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: "quicksand";
+                src: url("fonts/quicksand/quicksand-bold.woff2") format("woff2"), url("fonts/quicksand/quicksand-bold.woff") format("woff");
+                font-weight: 700;
+                font-style: normal;
+            }
+            h1, h2, .uk-h1, .uk-h2, .uk-heading {
+                font-family: "ayanami", sans-serif;
+            }
+            .uk-h3, .uk-h4, .uk-card-title {
+                font-family: "quicksand", sans-serif;
+                font-weight: 700;
+            }
+            body {
+                font-family: "quicksand", sans-serif;
+                color: #333;
+            }
+
+            /* Appel à bénévoles */
+            .benevoles {
+                filter: opacity(15%)
+            }
+            .benevoles:hover {
+                filter: opacity(85%)
+            }
+
+            /* UIkit fix for Reveal.js */
+            [hidden] {
+                display: inherit !important;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+                <!-- Accueil -->			
+                <section>
+                    <div class="uk-container">
+                        <div class="uk-flex uk-flex-middle uk-animation-fade" uk-grid>
+                            <div class="uk-width-1-3@m uk-visible@m">
+                                <img src="img/logo-leberceau-drawing.svg" alt="Logo du Berceau de l’Égalité" width="300" height="300" class="logo">
+                            </div>
+                            <div class="uk-width-1-3@m uk-hidden@m uk-visible@s">
+                                <img src="img/logo-leberceau-drawing.svg" alt="Logo du Berceau de l’Égalité" width="33%">
+                            </div>
+                            <div class="uk-width-1-3@m uk-hidden@s">
+                                <img src="img/logo-leberceau-drawing.svg" alt="Logo du Berceau de l’Égalité" width="50%">
+                            </div>                            
+                            <div class="uk-width-expand">
+                                <h1 class="uk-h1 uk-heading-small">Le Berceau de l’Égalité</h1>
+                                <p class="uk-text-lead">Une mallette <span class="uk-text-muted uk-visible@s"><del>magique</del></span> pédagogique pour découvrir la diversité, dès le plus jeune âge, à travers les sens, les émotions, la musique, les mots et les histoires…</p>
+                                <a href="http://www.lefuret.org/" rel="me" target="_blank" class="uk-link-toggle">
+                                    <p class="uk-text-primary uk-visible@s">Une initiative de l’association <b>Le Furet</b></p>
+                                    <img src="img/logo-lefuret.svg" alt="Logo de l'association Le Furet" width="250" height="90">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+
+                    <!-- Présentation générale -->
+                    <section>
+                        <div class="uk-container">
+                            <div class="uk-flex uk-flex-middle" uk-grid>
+                                <div class="uk-width-1-2@m uk-text-left@m uk-text-center@s">
+                                    <h2 class="uk-h1">Qu’est-ce que c’est&nbsp;?</h2>
+                                    <p class="uk-text-lead">Le Berceau de l’Égalité s’adresse aux professionnel·le·s de la petite enfance et les accompagne dans leurs pratiques quotidiennes auprès des enfants de 0 à 3 ans, voire 6 ans.</p>
+                                </div>
+                                <div class="uk-width-1-4@m uk-width-1-2@s uk-text-left uk-visible@s uk-animation-toggle">
+                                    <img class="uk-align-center uk-animation-shake" data-src="img/superhero.svg" alt="Dessin d'une superhéro" width="150">
+                                    <p class="uk-h4 uk-margin uk-margin-remove-bottom">Éducation à la citoyenneté</p>
+                                    <p class="uk-margin-small-top uk-text-break">Favoriser l’ouverture envers tou·te·s, ainsi que le mieux vivre ensemble, exige de <mark>lutter contre l’intégration et la fixation des stéréotypes dès le plus âge</mark> et d’accompagner la perception des différences chez le tout-petit sans hiérarchisation&nbsp;!</p>
+                                </div>
+                                <div class="uk-width-1-4@m uk-width-1-2@s uk-text-left uk-visible@s uk-animation-toggle">
+                                    <img class="uk-align-center uk-animation-shake" data-src="img/poupon.svg" alt="Dessin d'un poupon" width="150">
+                                    <p class="uk-h4 uk-margin-top uk-margin-remove-bottom">Petite enfance</p>
+                                    <p class="uk-margin-small-top uk-text-break">Chaque outil de la mallette a été sélectionné pour permettre <mark>une sensibilisation dès le plus âge à la différence</mark>, qu’il s’agisse des sons, des langues, des émotions, des perceptions ou des sens.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Problématique -->
+                    <section>
+                        <div class="uk-container">
+                            <div class="uk-flex uk-flex-middle" uk-grid>
+                                <div class="uk-width-2-5@m uk-text-left uk-text-break">
+                                    <h3 class="uk-h1">Pourquoi&nbsp;?</h3>
+                                    <p>Grâce à la connaissance du développement du jeune enfant, nous savons qu’il perçoit et repère très tôt les différences.</p>
+                                    <p>Pour son développement cognitif, il a besoin de construire des catégories. <mark>Il s’imprègne de ce qu’il perçoit des hiérarchisations que nous, adultes, faisons, pour se positionner par rapport à ces catégories.</mark></p>
+                                    <p class="uk-visible@s">C’est par ce processus que l’enfant acquiert les stéréotypes du monde dans lequel il évolue. Et c’est à ce moment-là que la mallette devient un outil intéressant dans notre interaction avec le tout petit.</p>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <a href="http://video.cnfpt.fr/widget/agir-contre-les-discriminations-dans-le-champ-de-la-petite-enfance-pleniere-dolivier-pascalis-25-janvier-2019" rel="nofollow noopener noreferrer" target="_blank" class="uk-link-toggle">
+                                        <figure>
+                                            <div class="uk-inline uk-light">
+                                                <img class="uk-margin-small" src="img/video.jpg" alt="Capture d'écran de l'intervention d'Olivier Pascalis">
+                                                <div class="uk-position-center">
+                                                    <span uk-icon="icon: play-circle; ratio: 4" class="uk-icon-link"></span>
+                                                </div>
+                                            </div>
+                                            <figcaption class="uk-text-meta uk-link-reset" style="line-height: 1">
+                                                <small>Voir l’intervention d’Olivier Pascalis, Directeur du Babylab Grenoble (CNRS/UGA), sur les stéréotypes dans le cadre du colloque «&nbsp;Agir contre les discriminations dès la petite enfance&nbsp;», 25 janvier 2019</small>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>                
+
+                </section>
+
+                <section>
+
+                    <!-- Contenu : Liste -->
+                    <section>
+                        <div class="uk-container">
+                            <h2 class="uk-h1">Un contenu simple pour parler d’égalité et de diversité</h2>
+                            <p class="uk-text-lead">La mallette pédagogique est composée d’outils simples que chaque professionnel·le peut quotidiennement utiliser dans sa structure.</p>
+                            <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-card-small uk-margin-top uk-visible@s" uk-grid>
+                                <a href="#/2/1" class="uk-link-toggle">
+                                    <div class="uk-card uk-animation-toggle">
+                                        <div class="uk-card-media-top">
+                                            <img class="uk-height-small uk-animation-shake" data-src="img/livre.svg" alt="Dessin d'un livre" uk-img>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <p class="uk-h4 uk-margin-remove-bottom">Des livres</p>
+                                            <p class="uk-margin-small-top">Pour favoriser la curiosité et l’ouverture aux autres</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#/2/2" class="uk-link-toggle">
+                                    <div class="uk-card uk-animation-toggle">
+                                        <div class="uk-card-media-top">
+                                            <img class="uk-height-small uk-animation-shake" data-src="img/musique.svg" alt="Dessin d'une guitare" uk-img>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <p class="uk-h4 uk-margin-remove-bottom">Des musiques</p>
+                                            <p class="uk-margin-small-top">Pour stimuler l’attention et l’expression artistique et corporelle</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#/2/3" class="uk-link-toggle">
+                                    <div class="uk-card uk-animation-toggle">
+                                        <div class="uk-card-media-top">
+                                            <img class="uk-height-small uk-animation-shake" data-src="img/tapis.svg" alt="Dessin d'un tapis d'éveil" uk-img>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <p class="uk-h4 uk-margin-remove-bottom">Un tapis sensoriel</p>
+                                            <p class="uk-margin-small-top">Pour éveiller ses cinq sens et explorer formes, textures, odeurs</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#/2/4" class="uk-link-toggle">
+                                    <div class="uk-card uk-animation-toggle">
+                                        <div class="uk-card-media-top">
+                                            <img class="uk-height-small uk-animation-shake" data-src="img/poupee.svg" alt="Dessin d'une poupée émotions" uk-img>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <p class="uk-h4 uk-margin-remove-bottom">Une poupée émotion</p>
+                                            <p class="uk-margin-small-top">Pour accueillir et accompagner les émotions</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contenu : Livres -->
+                    <section>
+                        <div class="uk-container">
+                            <h3 class="uk-h2">Des livres à lire, écouter et partager&nbsp;!</h3>
+                            <div class="uk-column-1-2@m uk-column-divider uk-text-left uk-text-break">
+                                <p>Le livre constitue un support éducatif primordial pour les professionnel.le.s de la petite enfance. Il participe, en de nombreux aspects, aux acquisitions de l’enfant dans le domaine du langage, de la concentration ou encore de l’écoute.</p>
+                                <p class="uk-visible@s">Il favorise également la curiosité, l’ouverture aux autres, l’expression des émotions. Un outil indispensable pour stimuler le développement des compétences psychosociales (10 compétences psychosociales selon l’OMS).</p>
+                                <p class="uk-visible@s"><mark>Lors de la lecture, le ou la professionnel.le est à l’écoute de ce que cela suscite chez les enfants</mark>, les invite à s’exprimer sur ce qu’ils ont aimé et sur leur ressenti, en posant des questions ouvertes et en faisant varier le vocabulaire.</p>
+                                <p class="uk-column-span">Nous avons choisi 12 livres regroupés selon <b>5 thèmes</b>&nbsp;: le genre, la diversité, le handicap, le plurilinguisme et l’altérité…</p>
+                            </div>
+                            <div  class="uk-margin" uk-slider="autoplay: true">
+                                <div class="uk-position-relative" tabindex="-1">
+                                    <ul class="uk-slider-items uk-child-width-1-5@m uk-child-width-1-4@s uk-child-width-1-2 uk-grid-small">
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/tesfleurouteschou.jpg" alt="T'es fleur ou t'es chou ?" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/petitbleuetpetitjaune.jpg" alt="Petit bleu et petit jaune" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/quatrepetitscoins.jpg" alt="Quatre petits coins de rien du tout" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/unelephantnepeutpas.jpg" alt="Un éléphant ne peut pas monter dans un arbre" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/lapetitecasserole.jpg" alt="La petite casserole d'Anatole" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/regardeenhaut.jpg" alt="Regarde en haut" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/lescrisdesanimaux.jpg" alt="Les cris des animaux en cinq langues" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/bonappetitsuzy.jpg" alt="Bon appétit Suzy" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/monvoisin.jpg" alt="Mon voisin" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/despapasetdesmamans.jpg" alt="Des papas et des mamans" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/lapetiteoie.jpg" alt="La petite oie qui ne voulait pas marcher au pas" uk-img></div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contenu : Musique -->
+                    <section>
+                        <div class="uk-container">
+                            <h3 class="uk-h2">Des musiques d’ici et d’ailleurs&nbsp;!</h3>
+                            <div class="uk-column-1-2@m uk-column-divider uk-text-left uk-margin uk-text-break">
+                                <p>La musique, grand vecteur de plaisir, participe au développement de l’enfant au niveau du langage, de la coordination motrice, de l’imaginaire. Elle stimule aussi l’attention et favorise l’expression artistique et corporelle.</p>
+                                <p class="uk-visible@s"><mark>En éveillant l’enfant à de multiples sonorités, langues, styles musicaux, chansons ou comptines, on l’ouvre à d’autres horizons.</mark></p>
+                                <p class="uk-visible@s">En écoutant, chantant, dansant, l’enfant est libre de ressentir la musique à sa façon.</p>
+                                <p class="uk-column-span uk-visible@s">4 CD musicaux accompagnent ainsi la mallette&nbsp;:</p>
+                            </div>
+                            <div uk-slider="autoplay: true">
+                                <div class="uk-position-relative" tabindex="-1">
+                                    <ul class="uk-slider-items uk-child-width-1-4@m uk-child-width-1-3@s uk-child-width-1-2 uk-grid-small">
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-small-bottom"><img data-src="img/musique/chasonspourdanserautourdumonde.jpg" alt="Chansons pour danser autour du monde" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-small-bottom"><img data-src="img/musique/lesplusbellesberceuses.jpg" alt="Les plus belles berceuses du monde" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-small-bottom"><img data-src="img/musique/chantelemonde.jpg" alt="Chante le monde" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-small-bottom"><img data-src="img/musique/26comptines.jpg" alt="26 comptines pour découvrir les langues" uk-img></div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uk-grid-small uk-child-width-1-2@m uk-margin uk-text-left" uk-grid>
+                                <div class="uk-text-break">
+                                    <p>Avec les livrets d’accompagnement des CD, les professionnel.le.s pourront notamment informer les enfants de la langue et du pays d’origine de la musique. Les plus mélomanes n’hésiteront pas à identifier les instruments que l’on entend, à reprendre les rythmes, les sons, les mélodies qui leur plaisent le plus.</p>
+                                </div>
+                                <div class="uk-text-muted uk-visible@s">
+                                    <p>Il est aussi possible de relier les musiques et les livres à ce que vivent les enfants au quotidien et dans leur famille et ainsi leur permettre de s’inscrire dans leur histoire. Exemples d’instruments traditionnels&nbsp;: 
+                                        <a href="https://fr.wikipedia.org/wiki/Oud" title="Instrument à cordes traditionnel du Maghreb" target="_blank" class="uk-link">l’Oud</a>, 
+                                        <a href="https://fr.wikipedia.org/wiki/Kora" title="Instrument traditionnel d’Afrique de l’Ouest" target="_blank" class="uk-link">la Kora</a>, 
+                                        <a href="https://fr.wikipedia.org/wiki/Bouzouki" title="Instrument à cordes traditionnel grec" target="_blank" class="uk-link">le Bouzouki</a>, 
+                                        <a href="https://fr.wikipedia.org/wiki/Tabla" title="Percussions traditionnelles indiennes" target="_blank" class="uk-link">les Tablas</a>, 
+                                        <a href="https://fr.wikipedia.org/wiki/Duduk" title="Flûte traditionnelle arménienne" target="_blank" class="uk-link">le Doudouk</a>…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contenu : Tapis sensoriel -->
+                    <section>
+                        <div class="uk-container">
+                            <h3 class="uk-h2">Se lancer dans l’exploration avec le tapis sensoriel</h3>
+                            <div class="uk-column-1-2@m uk-column-divider uk-text-left uk-margin uk-text-break">
+                                <p>Les cinq sens constituent pour chacun.e la première source d’information. Tout petit déjà, l’enfant utilise ses sens pour découvrir son environnement.</p>
+                                <p class="uk-visible@s"><mark>Grâce au tapis sensoriel, l’enfant explore un ensemble de textures</mark> (lisse, rugueux, doux, etc.), <mark>d’odeurs</mark> (grâces aux huiles essentielles), <mark>de formes</mark> (certaines émettent des sons, d’autres peuvent peuvent être tiédies sur radiateur ou au micro-ondes pour enrichir les sensations).</p>
+                            </div>
+                            <div class="uk-visible@m uk-margin-medium-top">
+                                <img data-src="img/divider1.svg" width="20%" alt="Séparateur" uk-img>
+                            </div>
+                            <div class="uk-hidden@m uk-visible@s uk-margin-medium-top">
+                                <img data-src="img/divider1.svg" width="30%" alt="Séparateur" uk-img>
+                            </div>
+                            <h4 class="uk-h3 uk-margin">Comment utiliser le tapis sensoriel&nbsp;?</h4>
+                            <div class="uk-panel uk-panel-scrollable uk-background-default">
+                                <ul class="uk-list uk-text-left">                            
+                                    <li class="uk-margin">
+                                        <p class="uk-text-uppercase uk-text-bold">Préparation du matériel</p>
+                                        <ol>
+                                            <li>Déplier le tapis et placer les plaques tactiles sur les scratchs.</li>
+                                            <li>Glisser un coton imprégné de quelques gouttes d’huiles essentielles (lavande ou eucalyptus - essences non allergènes) dans les poches prévues à cet effet.</li>
+                                            <li>Tiédir le sac contenant des noyaux de cerises.</li>
+                                        </ol>
+                                    </li>
+                                    <li class="uk-margin">
+                                        <p class="uk-text-uppercase uk-text-bold">Activités avec les enfants</p>
+                                        <ol>
+                                            <li>Le ou la professionnel.le questionne l’enfant sur les matières, les sensations tactiles ressenties, sur les odeurs.</li>
+                                            <li>Introduire des variations&nbsp;: pieds nus, toucher avec le coude, la joue… qu’est-ce que cela change&nbsp;?</li>
+                                            <li>Avec les plus grands, on peut envisager de bander les yeux, pour affiner la perception tactile et éviter les a priori.</li>
+                                        </ol>
+                                    </li>
+                                    <li class="uk-margin">
+                                        <p class="uk-text-uppercase uk-text-bold">Action pédagogique</p>
+                                        <ol>
+                                            <li>Veiller au vocabulaire, aux intonations et mimiques utilisés pour décrire les sensations, afin de ne pas induire des jugements de valeur (comme beurk, whaouahou, etc.).</li>
+                                            <li>Avec le tapis sensoriel, amener l’enfant à découvrir les sensations sans qu’une hiérarchisation ne lui soit suggérée.</li>
+                                            <li>Il est préférable que le tapis sendoriel soit utilisé individuellement ou en petit groupe car l’accompagnement est insdispensable.</li>
+                                        </ol>
+                                    </li>
+                                    <li class="uk-margin">
+                                        <p class="uk-text-uppercase uk-text-bold">Nos conseils</p>
+                                        <ol>
+                                            <li>Contextualiser&nbsp;: avec, par exemple, telle musique associée au passage sur le tapis…</li>
+                                            <li>Poser des questions&nbsp;: est-ce lisse&nbsp;? est-ce doux&nbsp;?</li>
+                                            <li>Veiller à mettre l’accent sur les mots-clés quand on décrit les textures explorées. Souligner les jeux de contraires&nbsp;: lisse/rugueux, mou/dur…</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contenu : Poupée -->
+                    <section>
+                        <div class="uk-container">
+                            <h3 class="uk-h2">Une poupée pour accompagner les émotions</h3>
+                            <div class="uk-column-1-2@m uk-column-divider uk-text-left uk-margin uk-text-break">
+                                <p>En tant que réactions spontanées, les émotions jaillissent tout particulièrement chez le tout petit de façon brute, immédiate. Il est donc important, pour le.la professionnel.le, d’écouter, d’accueillir et d’accompagner les différentes émotions qu’exprime un enfant.</p>
+                                <p class="uk-visible@s">En grandissant, ce dernier prend conscience de ce qu’il ressent et apprendre à le nommer. <mark>Il va passer d’un ressenti à l’expression émotionnelle, grâce à la verbalisation</mark>, c’est pourquoi nous proposons une poupée émotions, avec des visages interchangeables à scratcher en fonction des situations.</p>
+                                <p class="uk-visible@s">Chacun des visages exprime une émotion primaire&nbsp;: la joie, la tristesse, la colère.</p>
+                            </div>
+                            <div class="uk-visible@m uk-margin-medium-top">
+                                <img data-src="img/divider2.svg" width="20%" alt="Séparateur" uk-img>
+                            </div>
+                            <div class="uk-hidden@m uk-visible@s uk-margin-medium-top">
+                                <img data-src="img/divider2.svg" width="30%" alt="Séparateur" uk-img>
+                            </div>                            
+                            <h4 class="uk-h3 uk-margin">Comment utiliser la poupée émotions&nbsp;?</h4>
+                            <div class="uk-panel uk-panel-scrollable uk-background-default">
+                                <ul class="uk-list uk-list-bullet uk-text-left">
+                                    <li class="uk-margin">Cette poupée peut être proposée à l’enfant pour qu’il nomme ou désigne l’émotion éprouvée.</li>
+                                    <li class="uk-margin">Elle peut aussi être utilisée en complément des livres pour formuler le ressenti d’un personnage.</li>
+                                    <li class="uk-margin">Enfin, le ou la professionnel.le peut également questionner l’enfant sur ce que représente le visage, ce que produit cette émotion ou ce qu’il ressent.</li>
+                                    <li class="uk-margin">Avec la poupée émotions, amener l’enfant à découvrir les sensations sans qu’une hiérarchisation ne lui soit suggérée. Ne pas hésiter à élargir le vocabulaire lié à chacune des émotions représentées afin d’enrichir l’expression. Par exemple&nbsp;:
+                                        <ul>
+                                            <li>- La joie&nbsp;: content, satisfait, heureux, joyeux, détendu…</li>
+                                            <li>- La tristesse&nbsp;: triste, chagriné, je m’ennuie, j’ai de la peine…</li>
+                                            <li>- La colère&nbsp;: frustré, énervé, j’ai mal…</li>
+                                        </ul>
+                                    </li>
+                                    <li class="uk-margin">Quelques pistes&nbsp;:
+                                        <ul>
+                                            <li>- Imiter les émotions&nbsp;: montrer la poupée avec une émotion et proposer aux enfants de faire pareil (les sourcils, la bouche…)</li>
+                                            <li>- Montrer ce qui diffère d’une émotion à l’autre (les sourcils, la bouche…)</li>
+                                            <li>- Compléter la phrase&nbsp;: quand je suis fâchée, je me sens, j’ai envie…</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>        
+                    </section>
+
+                    <!-- Contenu : Aller plus loin -->
+                    <section>
+                        <div class="uk-container">
+                            <h3 class="uk-h2">Pour aller plus loin…</h3>
+                            <div class="uk-flex uk-flex-middle" uk-grid>
+                                <div class="uk-width-1-5@m">
+                                    <ul class="uk-tab-left uk-flex-center" uk-tab="connect: #component-tab-left; animation: uk-animation-fade; autoplay: true">
+                                        <li><a href="#">La boîte à sensations</a></li>
+                                        <li><a href="#">Lourd/léger</a></li>
+                                        <li><a href="#">Les goûts contraires</a></li>
+                                        <li><a href="#">Grand-Petit</a></li>
+                                        <li><a href="#">Le cri d’animal</a></li>
+                                        <li><a href="#">Le jeu du miroir</a></li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-expand@m uk-background-default">
+                                    <ul id="component-tab-left" class="uk-switcher">
+                                        <li>
+                                            <div class="uk-card uk-card-body uk-card-default uk-text-left">
+                                                <h4 class="uk-card-title">La boîte à sensations</h4>
+                                                <p class="uk-text-muted"><small>Matériel nécessaire&nbsp;: une boîte d’oeufs et des petits morceaux de différentes textures (papier sablé, ouate, fausse fourrure, éponge, papier ondulé, etc.).</small></p>
+                                                <p>Invitez les enfants à coller un morceau de chaque texture dans les alvéoles de la boîte d’oeufs. À la fin de l’activité, ils pourront, avec leurs doigts et en gardant les yeux fermés, explorer les textures et leurs contraires.</p>
+                                                <p>Et pourquoi ne pas emporter la boîte en fin de journée à la maison pour le faire avec les parents&nbsp;?</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-card uk-card-body uk-card-default uk-text-left">
+                                                <h4 class="uk-card-title">Lourd/léger</h4>
+                                                <p class="uk-text-muted"><small>Matériel nécessaire&nbsp;: un balancier et plusieurs objets à peser.</small></p>
+                                                <p>Les enfants pourront ainsi comparer le poids des différents objets et découvrir lesquels sont plus lourds ou plus légers que d’autres.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-card uk-card-body uk-card-default uk-text-left">
+                                                <h4 class="uk-card-title">Les goûts contraires</h4>
+                                                <p>Organisez, avec les enfants, une dégustation d’aliments présentant des goûts contraires.</p>
+                                                <p>Au menu&nbsp;: orange vs. pamplemousse, pommes rouges vs. pommes vertes, sucre vs. sel, etc.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-card uk-card-body uk-card-default uk-text-left">
+                                                <h4 class="uk-card-title">Grand-Petit</h4>
+                                                <p>Installez une banderole de papier au mur et invitez les enfants à y imprimer, avec de la peinture, l’empreinte de leur main ou de leur pied.</p>
+                                                <p>À côté, postionnez une seconde banderole à même hauteur, et invitez les parents à faire comme les enfants.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-card uk-card-body uk-card-default uk-text-left">
+                                                <h4 class="uk-card-title">Le cri d’animal</h4>
+                                                <p>C’est une excellente façon d’extérioriser la colère. Il suffit de s’installer à quatre pattes et rugir comme un lion, le plus fort possible, en relevant la tête.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-card uk-card-body uk-card-default uk-text-left">
+                                                <h4 class="uk-card-title">Le jeu du miroir</h4>
+                                                <p>Les enfants miment des émotions devant un miroir.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uk-visible@m uk-margin-medium">
+                                <img data-src="img/divider3.svg" width="20%" alt="Séparateur" uk-img>
+                            </div>
+                            <div class="uk-hidden@m uk-visible@s uk-margin-medium">
+                                <img data-src="img/divider3.svg" width="30%" alt="Séparateur" uk-img>
+                            </div>
+                            <div class="uk-hidden@s uk-margin-medium">
+                                <img data-src="img/divider3.svg" width="50%" alt="Séparateur" uk-img>
+                            </div>                              
+                        </div>
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <!-- Passer à l'action -->                                  
+                    <section>
+                        <div class="uk-container">
+                            <h2 class="uk-h1">Comment emprunter&nbsp;?</h2>
+                            <p class="uk-text-lead uk-visible@s">4 mallettes pédagogiques sont disponibles gratuitement pour les professionnel·le·s de la petite enfance.</p>
+                            <table class="uk-table uk-table-divider uk-table-hover uk-table-large uk-table-responsive uk-text-left uk-visible@s">
+                                <tr>
+                                    <td class="uk-text-uppercase uk-text-emphasis uk-text-bold">Où&nbsp;?</td>
+                                    <td>À la Médiathèque du Furet, 6 Quai de Paris à Strasbourg.</td>
+                                </tr>
+                                <tr>
+                                    <td class="uk-text-uppercase uk-text-emphasis uk-text-bold">Pour combien de temps&nbsp;?</td>
+                                    <td>3 semaines environ…</td>
+                                </tr>
+                                <tr>
+                                    <td class="uk-text-uppercase uk-text-emphasis uk-text-bold">Comment&nbsp;?</td>
+                                    <td>Appeler le 03.88.21.96.62 ou envoyer une demande d’emprunt <a href="https://www.lefuret.org/emprunter-la-mallette-le-berceau-de-legalite/" target="_blank"><b>via le formulaire</b></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="uk-text-uppercase uk-text-emphasis uk-text-bold">À quelles conditions&nbsp;?</td>
+                                    <td>
+                                        <ul class="uk-list">
+                                            <li>Suivre une initiation d’une heure gratuite pour les professionnel.le.s empruntant la mallette&nbsp;: présentation de la démarche et clarification des notions de stéréotypes - préjugés - discrimination.</li>
+                                            <li>Procéder à un nettoyage complet de la malette avant retour (indications sur l’inventaire fourni).</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="uk-hidden@s">
+                                <p class="uk-text-lead">Appeler le <a href="tel:0388219662">03.88.21.96.62</a> ou envoyer une demande d’emprunt <a href="https://www.lefuret.org/emprunter-la-mallette-le-berceau-de-legalite/" target="_blank"><b>via le formulaire</b></a></p>
+                                <p class="uk-text-left uk-text-muted uk-margin-top"><small>Conditions&nbsp;: Suivre une initiation d’une heure gratuite pour les professionnel.le.s empruntant la mallette&nbsp;: présentation de la démarche et clarification des notions de stéréotypes - préjugés - discrimination. Procéder à un nettoyage complet de la malette avant retour (indications sur l’inventaire fourni). Durée&nbsp;: 3 semaines environ… Où&nbsp;: À la Médiathèque du Furet, 6 Quai de Paris à Strasbourg.</small></p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contact -->
+                    <section data-background="rgba(240,240,30,0.85)">
+                        <div class="uk-container">
+                            <p class="uk-text-lead">Pour toute question et information complémentaire&nbsp;:</p>
+                            <a class="uk-h1 uk-text-primary uk-link" href="mailto:egalite@lefuret.org" target="_blank">egalite@lefuret.org</a>
+                            <div class="uk-margin-large-top">
+                                <a href="https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fleberceau.lefuret.org" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur Facebook !" class="uk-icon-button" uk-icon="facebook"></a>
+                                <a href="https://twitter.com/intent/tweet/?text=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires%E2%80%A6%20Une%20initiative%20de%20l%E2%80%99association%20Le%20Furet&amp;url=http%3A%2F%2Fleberceau.lefuret.org" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur Twitter" class="uk-icon-button" uk-icon="twitter"></a>
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fleberceau.lefuret.org&amp;title=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9&amp;summary=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires...%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)&amp;source=http%3A%2F%2Fleberceau.lefuret.org" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur LinkedIn" class="uk-icon-button" uk-icon="linkedin"></a>
+                                <a href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9&amp;content=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires...%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(lefuret.org)&amp;canonicalUrl=http%3A%2F%2Fleberceau.lefuret.org&amp;shareSource=tumblr_share_button" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur Tumblr" class="uk-icon-button" uk-icon="tumblr"></a>
+                                <a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fleberceau.lefuret.org&amp;media=http%3A%2F%2Fleberceau.lefuret.org&amp;description=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires...%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur Pinterest" class="uk-icon-button" uk-icon="pinterest"></a>
+                                <a href="https://wa.me/?text=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires...%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur WhatsApp" class="uk-icon-button" uk-icon="whatsapp"></a>
+                                <a href="mailto:?subject=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9&amp;body=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires...%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)" title="Partagez-moi par email" class="uk-icon-button" uk-icon="mail"></a>
+                            </div>
+                            <ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-small uk-text-uppercase uk-margin-medium-top">
+                                <li><a href="/">Retour</a></li>
+                                <li><a href="?print-pdf">Imprimer</a></li>
+                                <li><a href="http://www.lefuret.org/" rel="me" target="_blank">Aller vers <b>lefuret.org</b></a></li>
+                            </ul>
+                            <div class="uk-margin-top">
+                                <a href="mailto:contact@lefuret.org?subject=Je%20voudrais%20rejoindre%20l'%C3%A9quipe%20des%20b%C3%A9n%C3%A9voles%20!&body=Bonjour%2C%0D%0A%0D%0AJ'aimerais%20%C3%AAtre%20contact%C3%A9.e%20pour%20devenir%20b%C3%A9n%C3%A9vole." class="uk-link-toggle">
+                                    <div class="uk-visible@m">
+                                        <img class="benevoles uk-width-medium" data-src="img/benevoles.svg" alt="Appel à bénévoles" uk-img>
+                                    </div>
+                                    <div class="uk-hidden@m uk-visible@s">
+                                        <img class="benevoles uk-width-medium" data-src="img/benevoles.svg" alt="Appel à bénévoles" uk-img>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+
+            </div>
+        </div>
+
+        <!-- UIkit -->
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+
+        <!-- Reveal.js -->
+        <script src="js/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+                overview: false,
+                progress: false,
+                hash: false,
+                controlsLayout: 'edges',
+                touch: false,
+                fragments: false,
+                help: false,
+                hideAddressBar: true,
+                parallaxBackgroundImage: 'img/blobs.svg',
+                parallaxBackgroundSize: '6000px 2100px',
+                width: "100%",
+                height: "100%",
+            });
+        </script>
+
+    </body>
+</html>
