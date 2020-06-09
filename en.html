@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Titre et description du site -->
+        <title>A Toolbox for Equality | Le Furet</title>
+        <meta name="description" content="Discover our educational material to support children in their exploration of diversity. Get your free toolbox today!">
+        <meta name="keywords" content="early childhood, discrimination, education">
+        <meta name="author" content="Le Furet Petite Enfance & Diversité">
+
+        <!-- OpenGraph -->
+        <meta property="og:image:width" content="1600">
+        <meta property="og:image:height" content="838">
+        <meta property="og:description" content="A Child&rsquo;s Toolbox for Equality, an educational toolbox to discover diversity, from an early age, through touch, emotions, music, words and stories&hellip; An initiative of the Le Furet association">
+        <meta property="og:title" content="Toolbox for Equality">
+        <meta property="og:url" content="http://leberceau.lefuret.org">
+        <meta property="og:image" content="http://leberceau.lefuret.org/img/og-image.jpg">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
+        <link rel="manifest" href="/img/icons/site.webmanifest">
+        <link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#39f">
+        <link rel="shortcut icon" href="/img/icons/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="A Toolbox for Equality">
+        <meta name="application-name" content="A Toolbox for Equality">
+        <meta name="msapplication-TileColor" content="#39f">
+        <meta name="msapplication-config" content="/img/icons/browserconfig.xml">
+        <meta name="theme-color" content="#fff">  
+
+        <!-- Feuilles de styles -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/uikit.min.css">
+
+        <!-- Polices -->
+        <style type="text/css">
+            @font-face {
+                font-family: "ayanami";
+                src: url("fonts/ayanami/ayanami.woff2") format("woff2"), url("fonts/ayanami/ayanami.woff") format("woff");
+                font-weight: normal;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: "quicksand";
+                src: url("fonts/quicksand/quicksand-regular.woff2") format("woff2"), url("fonts/quicksand/quicksand-regular.woff") format("woff");
+                font-weight: 400;
+                font-style: normal;
+            }
+            @font-face {
+                font-family: "quicksand";
+                src: url("fonts/quicksand/quicksand-bold.woff2") format("woff2"), url("fonts/quicksand/quicksand-bold.woff") format("woff");
+                font-weight: 700;
+                font-style: normal;
+            }
+            h1, h2, .uk-h1, .uk-h2, .uk-heading {
+                font-family: "ayanami", sans-serif;
+            }
+            .uk-h3, .uk-h4, .uk-card-title {
+                font-family: "quicksand", sans-serif;
+                font-weight: 700;
+            }
+            body {
+                font-family: "quicksand", sans-serif;
+                color: #333;
+            }
+
+            /* UIkit fix for Reveal.js */
+            [hidden] {
+                display: inherit !important;
+            }
+
+            /* Custom */
+            .benevoles { -webkit-filter: opacity(15%); filter: opacity(15%); }
+            .benevoles:hover { -webkit-filter: opacity(50%); filter: opacity(50%); }
+
+            .partenaires { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+            .partenaires:hover { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
+
+            .menu {
+                position: fixed;
+                right: 30px;
+                top: 30px;
+                z-index: 9999;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="menu"><a uk-toggle="target: #menu" class="uk-icon-button uk-box-shadow-large" uk-icon="world"></a></div>
+
+        <div id="menu" uk-offcanvas="overlay: true; flip: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    <li class="uk-nav-header">Français</li>
+                    <li><a href="index.html">Cliquer ici pour visualiser cette presentation en Français</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <div class="slides">
+
+                <!-- Accueil -->			
+                <section>
+                    <div class="uk-container">
+                        <div class="uk-flex uk-flex-middle uk-animation-fade" uk-grid>
+                            <div class="uk-width-1-3@m uk-visible@m">
+                                <img src="img/logo-leberceau-drawing.svg" alt="Logo of the Toolbox for Equality" width="300" height="300" class="logo">
+                            </div>
+                            <div class="uk-width-1-3@m uk-hidden@m uk-visible@s">
+                                <img src="img/logo-leberceau-drawing.svg" alt="Logo of Toolbox for Equality" width="33%">
+                            </div>
+                            <div class="uk-width-1-3@m uk-hidden@s">
+                                <img src="img/logo-leberceau-drawing.svg" alt="Logo of Toolbox for Equality" width="50%">
+                            </div>                            
+                            <div class="uk-width-expand">
+                                <h1 class="uk-h1 uk-heading-small">A Child’s Toolbox for Equality</h1>
+                                <p class="uk-text-lead">An educational toolbox to discover diversity, from an early age, through touch, emotions, music, words and stories…</p>
+                                <a href="http://www.lefuret.org/" rel="me" target="_blank" class="uk-link-toggle">
+                                    <p class="uk-text-primary uk-visible@s">An initiative of the <b>Le Furet</b> association</p>
+                                    <img src="img/logo-lefuret.svg" alt="Logo of Le Furet association" width="250" height="90">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+
+                    <!-- Présentation générale -->
+                    <section>
+                        <div class="uk-container">
+                            <div class="uk-flex uk-flex-middle" uk-grid>
+                                <div class="uk-width-1-2@m uk-text-left@m uk-text-center@s">
+                                    <h2 class="uk-h1">What is the Toolbox for Equality?</h2>
+                                    <p class="uk-text-lead">The Toolbox is aimed at early childhood professionals and supports them in their daily practices discovering diversity with children from 0 to 3 years old, up to 6 years old.</p>
+                                </div>
+                                <div class="uk-width-1-4@m uk-width-1-2@s uk-text-left uk-visible@s uk-animation-toggle">
+                                    <img class="uk-align-center uk-animation-shake" data-src="img/superhero.svg" alt="Drawing of a superhero" width="150">
+                                    <p class="uk-h4 uk-margin uk-margin-remove-bottom">Education to citizenship</p>
+                                    <p class="uk-margin-small-top uk-text-break">Fostering openness towards all, as well as living better together, requires fighting against the integration and conceptions of stereotypes from an early age. The toolbox aims at accompanying the perception of differences in the toddler without prioritization!</p>
+                                </div>
+                                <div class="uk-width-1-4@m uk-width-1-2@s uk-text-left uk-visible@s uk-animation-toggle">
+                                    <img class="uk-align-center uk-animation-shake" data-src="img/poupon.svg" alt="Drawing of a toddler" width="150">
+                                    <p class="uk-h4 uk-margin-top uk-margin-remove-bottom">Early childhood</p>
+                                    <p class="uk-margin-small-top uk-text-break">Each item in the toolbox has been selected to allow children of the earliest age to perceive differences, whether it be sounds, languages, emotions, perceptions or senses.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Problématique -->
+                    <section>
+                        <div class="uk-container">
+                            <div class="uk-flex uk-flex-middle" uk-grid>
+                                <div class="uk-width-2-5@m uk-text-left uk-text-break">
+                                    <h3 class="uk-h1">How is it useful?</h3>
+                                    <p>Thanks to our network of healthcare and pedological professionals, Le Furet has gained vast knowledge on how young children develop and how they perceive differences from early on.</p>
+                                    <p>A child’s cognitive development depends on building categories. These categories are directly related to, and embedded in, how we as adults give hierarchy and position ourselves in relation to these categories. It is through this process that children acquire stereotypes of the world in which they live.</p>
+                                    <p class="uk-visible@s">The Diversity toolbox allow professionals to explore and interact with the little ones around diverse approaches based on senses and emotions rather than stereotypes.</p>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <a href="http://video.cnfpt.fr/widget/agir-contre-les-discriminations-dans-le-champ-de-la-petite-enfance-pleniere-dolivier-pascalis-25-janvier-2019" rel="nofollow noopener noreferrer" target="_blank" class="uk-link-toggle">
+                                        <figure>
+                                            <div class="uk-inline uk-light">
+                                                <img class="uk-margin-small" src="img/video.jpg" alt="Screenshot of the conference of Olivier Pascalis">
+                                                <div class="uk-position-center">
+                                                    <span uk-icon="icon: play-circle; ratio: 4" class="uk-icon-link"></span>
+                                                </div>
+                                            </div>
+                                            <figcaption class="uk-text-meta uk-link-reset" style="line-height: 1">
+                                                <small>See the intervention of Olivier Pascalis, Director of Babylab Grenoble (CNRS / UGA), on stereotypes as part of the conference “Acting against discrimination from an early childhood”, January 25, 2019</small>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>                
+
+                </section>
+
+                <section>
+
+                    <!-- Contenu : Liste -->
+                    <section>
+                        <div class="uk-container">
+                            <h2 class="uk-h1">Simple tools to talk to young children about equality and diversity</h2>
+                            <p class="uk-text-lead">The teaching toolbox is made up of several games and material that are simple to understand and use every day by professionals in their structure.</p>
+                            <div class="uk-child-width-1-2 uk-child-width-1-4@s uk-card-small uk-margin-top uk-visible@s" uk-grid>
+                                <a href="#/2/1" class="uk-link-toggle">
+                                    <div class="uk-card uk-animation-toggle">
+                                        <div class="uk-card-media-top">
+                                            <img class="uk-height-small uk-animation-shake" data-src="img/livre.svg" alt="Drawing of a book" uk-img>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <p class="uk-h4 uk-margin-remove-bottom">Books</p>
+                                            <p class="uk-margin-small-top">To foster curiosity and openness to others</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#/2/2" class="uk-link-toggle">
+                                    <div class="uk-card uk-animation-toggle">
+                                        <div class="uk-card-media-top">
+                                            <img class="uk-height-small uk-animation-shake" data-src="img/musique.svg" alt="Drawing of a guitar" uk-img>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <p class="uk-h4 uk-margin-remove-bottom">Music</p>
+                                            <p class="uk-margin-small-top">To stimulate artistic attention and bodily expression</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#/2/3" class="uk-link-toggle">
+                                    <div class="uk-card uk-animation-toggle">
+                                        <div class="uk-card-media-top">
+                                            <img class="uk-height-small uk-animation-shake" data-src="img/tapis.svg" alt="Drawing of a sensory mat" uk-img>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <p class="uk-h4 uk-margin-remove-bottom">A sensory carpet</p>
+                                            <p class="uk-margin-small-top">To awaken the five senses and explore shapes, textures, smells</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#/2/4" class="uk-link-toggle">
+                                    <div class="uk-card uk-animation-toggle">
+                                        <div class="uk-card-media-top">
+                                            <img class="uk-height-small uk-animation-shake" data-src="img/poupee.svg" alt="Drawing of a doll" uk-img>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <p class="uk-h4 uk-margin-remove-bottom">A doll</p>
+                                            <p class="uk-margin-small-top">To welcome and support emotions</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contenu : Livres -->
+                    <section>
+                        <div class="uk-container">
+                            <h3 class="uk-h2">Books to read, listen and share!</h3>
+                            <div class="uk-column-1-2@m uk-column-divider uk-text-left uk-text-break">
+                                <p>The book constitutes an essential educational support for professionals in early childhood. Reading to children allows them to acquire language, concentration and listening.</p>
+                                <p class="uk-visible@s">It also promotes curiosity, openness to others, and the expression of emotions which are essential to stimulating the development of psychosocial skills (10 psychosocial skills according to the WHO).</p>
+                                <p class="uk-visible@s">When reading, the professional listens to how the child reacts and invites them to express themselves. What did they like and how did they feel, by asking open-ended questions and varying the vocabulary.</p>
+                                <p class="uk-column-span">We have chosen 12 books grouped according to 5 themes: gender, diversity, disability, multilingualism and otherness…</p>
+                            </div>
+                            <div  class="uk-margin" uk-slider="autoplay: true">
+                                <div class="uk-position-relative" tabindex="-1">
+                                    <ul class="uk-slider-items uk-child-width-1-5@m uk-child-width-1-4@s uk-child-width-1-2 uk-grid-small">
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/tesfleurouteschou.jpg" alt="T'es fleur ou t'es chou ?" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/petitbleuetpetitjaune.jpg" alt="Petit bleu et petit jaune" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/quatrepetitscoins.jpg" alt="Quatre petits coins de rien du tout" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/unelephantnepeutpas.jpg" alt="Un éléphant ne peut pas monter dans un arbre" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/lapetitecasserole.jpg" alt="La petite casserole d'Anatole" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/regardeenhaut.jpg" alt="Regarde en haut" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/lescrisdesanimaux.jpg" alt="Les cris des animaux en cinq langues" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/bonappetitsuzy.jpg" alt="Bon appétit Suzy" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/monvoisin.jpg" alt="Mon voisin" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/despapasetdesmamans.jpg" alt="Des papas et des mamans" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-bottom"><img data-src="img/livres/lapetiteoie.jpg" alt="La petite oie qui ne voulait pas marcher au pas" uk-img></div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contenu : Musique -->
+                    <section>
+                        <div class="uk-container">
+                            <h3 class="uk-h2">Music from here, there and everywhere!</h3>
+                            <div class="uk-column-1-2@m uk-column-divider uk-text-left uk-margin uk-text-break">
+                                <p>Music is not only a great vector of pleasure but also participates in the development of the child in terms of language, motor coordination and imagination. It stimulates attention and promotes artistic and bodily expression.</p>
+                                <p class="uk-visible@s">By awakening the child to multiple sounds, languages, musical styles, songs or nursery rhymes, other horizons are opened to the child. </p>
+                                <p class="uk-visible@s">By listening, singing, dancing, children are free to feel music in their own way.</p>
+                                <p class="uk-column-span uk-visible@s">4 musical CDs are included in the toolbox:</p>
+                            </div>
+                            <div uk-slider="autoplay: true">
+                                <div class="uk-position-relative" tabindex="-1">
+                                    <ul class="uk-slider-items uk-child-width-1-4@m uk-child-width-1-3@s uk-child-width-1-2 uk-grid-small">
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-small-bottom"><img data-src="img/musique/chasonspourdanserautourdumonde.jpg" alt="Chansons pour danser autour du monde" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-small-bottom"><img data-src="img/musique/lesplusbellesberceuses.jpg" alt="Les plus belles berceuses du monde" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-small-bottom"><img data-src="img/musique/chantelemonde.jpg" alt="Chante le monde" uk-img></div></li>
+                                        <li><div class="uk-card uk-media-bottom uk-card-default uk-card-hover uk-margin-small-bottom"><img data-src="img/musique/26comptines.jpg" alt="26 comptines pour découvrir les langues" uk-img></div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uk-grid-small uk-child-width-1-2@m uk-margin uk-text-left" uk-grid>
+                                <div class="uk-text-break">
+                                    <p>With accompanying booklets, professionals can talk to children about the language and country of origin of the music. Most music lovers will not hesitate to identify the instruments, pick up the rhythms, sounds, melodies that they like the most.</p>
+                                </div>
+                                <div class="uk-text-muted uk-visible@s">
+                                    <p>It is also possible to link music and books to what children experience on a daily basis and in their families and thus allow them to be part of their history. Examples of traditional instruments: 
+                                        <a href="https://fr.wikipedia.org/wiki/Oud" title="Traditional stringed instrument from the Maghreb" target="_blank" class="uk-link">the Oud</a>, 
+                                        <a href="https://fr.wikipedia.org/wiki/Kora" title="Traditional West African instrument" target="_blank" class="uk-link">the Kora</a>, 
+                                        <a href="https://fr.wikipedia.org/wiki/Bouzouki" title="Traditional Greek stringed instrument" target="_blank" class="uk-link">the Bouzouki</a>, 
+                                        <a href="https://fr.wikipedia.org/wiki/Tabla" title="Traditional Indian percussion" target="_blank" class="uk-link">the Tablas</a>, 
+                                        <a href="https://fr.wikipedia.org/wiki/Duduk" title="Traditional Armenian flute" target="_blank" class="uk-link">the Doudouk</a>…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contenu : Tapis sensoriel -->
+                    <section>
+                        <div class="uk-container">
+                            <h3 class="uk-h2">Start exploring with the sensory mat!</h3>
+                            <div class="uk-column-1-2@m uk-column-divider uk-text-left uk-margin uk-text-break">
+                                <p>The five senses are the primary sources of information for everyone. From the earliest age, children use their senses to discover their environment.</p>
+                                <p class="uk-visible@s">With the sensory mat, the child explores a set of textures (smooth, rough, soft, etc.), smells (of essential oils), shapes (some emit sounds, others can be lukewarm on radiator or microwave to enrich the sensations).</p>
+                            </div>
+                            <div class="uk-visible@m uk-margin-medium-top">
+                                <img data-src="img/divider1.svg" width="20%" alt="Divider" uk-img>
+                            </div>
+                            <div class="uk-hidden@m uk-visible@s uk-margin-medium-top">
+                                <img data-src="img/divider1.svg" width="30%" alt="Divider" uk-img>
+                            </div>
+                            <h4 class="uk-h3 uk-margin">How to use the sensory mat?</h4>
+                            <div class="uk-panel uk-panel-scrollable uk-background-default">
+                                <ul class="uk-list uk-text-left">                            
+                                    <li class="uk-margin">
+                                        <p class="uk-text-uppercase uk-text-bold">Material preparation</p>
+                                        <ol>
+                                            <li>Unfold the carpet and place the tactile plates on the hooks.</li>
+                                            <li>Slip a cotton pad impregnated with a few drops of essential oils (lavender or eucalyptus - non-allergenic essences) in the pockets provided for this purpose.</li>
+                                            <li>Warm the bag containing cherry stones.</li>
+                                        </ol>
+                                    </li>
+                                    <li class="uk-margin">
+                                        <p class="uk-text-uppercase uk-text-bold">Activities with children</p>
+                                        <ol>
+                                            <li>Talk with the child about the materials, the tactile sensations felt, and the smells odors.</li>
+                                            <li>. Introduce variations: bare feet, touch with the elbow, cheek… what does it change?</li>
+                                            <li>With the older children, you can consider blindfolding, to refine the tactile perception.</li>
+                                        </ol>
+                                    </li>
+                                    <li class="uk-margin">
+                                        <p class="uk-text-uppercase uk-text-bold">Educational action</p>
+                                        <ol>
+                                            <li>It is important to take care of the vocabulary, intonations and expressions used to describe sensations, so as not to induce value judgments (such as yuck, whaouahou, etc.).</li>
+                                            <li>With the sensory mat, lead the child to discover the sensations without suggesting a hierarchy to the areas.</li>
+                                            <li>In order to better accompany the child it is preferable that the mat be used individually or in a small group.</li>
+                                        </ol>
+                                    </li>
+                                    <li class="uk-margin">
+                                        <p class="uk-text-uppercase uk-text-bold">Our recommendations</p>
+                                        <ol>
+                                            <li>Contextualize: with, for example, such music associated with the passage on the carpet…</li>
+                                            <li>Ask questions: is it smooth? is it sweet?</li>
+                                            <li>Make sure to focus on keywords when describing the textures explored. Highlight the play of opposites: smooth/rough, soft/hard…<li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contenu : Poupée -->
+                    <section>
+                        <div class="uk-container">
+                            <h3 class="uk-h2">A doll to accompany the child’s emotions</h3>
+                            <div class="uk-column-1-2@m uk-column-divider uk-text-left uk-margin uk-text-break">
+                                <p>Young children express spontaneous reactions and emotions in an inhabited and immediate way. It is therefore important for the professional to listen, to welcome and to accompany the different emotions that a child feels.</p>
+                                <p class="uk-visible@s">As the child grows, he or she becomes aware of what he or she feels and learns to name it.  Thus children learn to verbalize their emotions. The doll in diversity toolbox, has interchangeable faces that can be scratched on depending on the situation.</p>
+                                <p class="uk-visible@s">Each of the faces expresses a primary emotion: joy, sadness, anger.</p>
+                            </div>
+                            <div class="uk-visible@m uk-margin-medium-top">
+                                <img data-src="img/divider2.svg" width="20%" alt="Divider" uk-img>
+                            </div>
+                            <div class="uk-hidden@m uk-visible@s uk-margin-medium-top">
+                                <img data-src="img/divider2.svg" width="30%" alt="Divider" uk-img>
+                            </div>                            
+                            <h4 class="uk-h3 uk-margin">How to use the emotions doll?</h4>
+                            <div class="uk-panel uk-panel-scrollable uk-background-default">
+                                <ul class="uk-list uk-list-bullet uk-text-left">
+                                    <li class="uk-margin">This doll can be offered to the child to name or designate the emotion experienced.</li>
+                                    <li class="uk-margin">It can also be used in addition to books to express the feelings of a character.</li>
+                                    <li class="uk-margin">Finally, the professional can also question the child on what the face represents, what this emotion produces or what he or she feels.</li>
+                                    <li class="uk-margin">With the emotions doll, the child is lead to discover the sensations without an imposed hierarchy of emotions.</li>
+                                    <li class="uk-margin">Do not hesitate to expand the vocabulary associated with each of the emotions represented in order to enrich the expression. For example:
+                                        <ul>
+                                            <li>- Joy: happy, satisfied, happy, joyful, I am relaxed…</li>
+                                            <li>- Sadness: upset, bored, I am sad …</li>
+                                            <li>- Anger: frustrated, aggravated, I’m in pain…</li>
+                                        </ul>
+                                    </li>
+                                    <li class="uk-margin">Some ideas:
+                                        <ul>
+                                            <li>- Imitate emotions: show the doll with an emotion and suggest to children to do the same (eyebrows, mouth…)</li>
+                                            <li>- Show what differs from one emotion to another (eyebrows, mouth…)</li>
+                                            <li>- Complete the sentence: when I'm angry, I feel, I want…</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>        
+                    </section>
+
+                    <!-- Contenu : Aller plus loin -->
+                    <section>
+                        <div class="uk-container">
+                            <h3 class="uk-h2">Further ideas…</h3>
+                            <div class="uk-flex uk-flex-middle" uk-grid>
+                                <div class="uk-width-1-5@m">
+                                    <ul class="uk-tab-left uk-flex-center" uk-tab="connect: #component-tab-left; animation: uk-animation-fade; autoplay: true">
+                                        <li><a href="#">The sensation box</a></li>
+                                        <li><a href="#">Heavy, light</a></li>
+                                        <li><a href="#">Contrary tastes</a></li>
+                                        <li><a href="#">Big, small</a></li>
+                                        <li><a href="#">The cry of an animal</a></li>
+                                        <li><a href="#">The mirror game</a></li>
+                                    </ul>
+                                </div>
+                                <div class="uk-width-expand@m uk-background-default">
+                                    <ul id="component-tab-left" class="uk-switcher">
+                                        <li>
+                                            <div class="uk-card uk-card-body uk-card-default uk-text-left">
+                                                <h4 class="uk-card-title">The sensation box</h4>
+                                                <p class="uk-text-muted"><small>Materials needed: a box of eggs and small pieces of different textures (sandpaper, wadding, faux fur, sponge, corrugated paper, etc.). </small></p>
+                                                <p>Invite the children to stick a piece of each texture in the cells of the egg carton. At the end of the activity, they will be able to explore textures and their opposites with their fingers while keeping their eyes closed.</p>
+                                                <p>The child can also take the box home at the end of the day and repeat the game with the parents?</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-card uk-card-body uk-card-default uk-text-left">
+                                                <h4 class="uk-card-title">Heavy, light</h4>
+                                                <p class="uk-text-muted"><small>Materials needed: a scale and several items to be weighed.</small></p>
+                                                <p>Children will be able to compare the weight of different objects and discover which ones are heavier or lighter than others.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-card uk-card-body uk-card-default uk-text-left">
+                                                <h4 class="uk-card-title">Contrary tastes</h4>
+                                                <p>Organize a tasting of foods presenting contrary tastes to the children.</p>
+                                                <p>For example, orange vs. grapefruit, red apples vs. green apples, sugar vs. salt, etc.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-card uk-card-body uk-card-default uk-text-left">
+                                                <h4 class="uk-card-title">Big, small</h4>
+                                                <p>Put a paper banner on the wall and invite the children to paint on it outlining their hand or their foot.</p>
+                                                <p>Next to it, position a second banner at the same height, and invite parents to do like the children.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-card uk-card-body uk-card-default uk-text-left">
+                                                <h4 class="uk-card-title">The cry of an animal</h4>
+                                                <p>It's a great way to externalize anger. Just sit on all fours and roar like a lion, as loud as possible, raising your head.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-card uk-card-body uk-card-default uk-text-left">
+                                                <h4 class="uk-card-title">The mirror game</h4>
+                                                <p>Children mime emotions in front of a mirror.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="uk-visible@m uk-margin-medium">
+                                <img data-src="img/divider3.svg" width="20%" alt="Divider" uk-img>
+                            </div>
+                            <div class="uk-hidden@m uk-visible@s uk-margin-medium">
+                                <img data-src="img/divider3.svg" width="30%" alt="Divider" uk-img>
+                            </div>
+                            <div class="uk-hidden@s uk-margin-medium">
+                                <img data-src="img/divider3.svg" width="50%" alt="Divider" uk-img>
+                            </div>                              
+                        </div>
+                    </section>
+
+                </section>
+
+                <section>
+
+                    <!-- Passer à l'action -->                                  
+                    <section>
+                        <div class="uk-container">
+                            <h2 class="uk-h1">How to borrow?</h2>
+                            <p class="uk-text-lead uk-visible@s">4 educational kits are available free of charge for early childhood professionals.</p>
+                            <table class="uk-table uk-table-divider uk-table-hover uk-table-large uk-table-responsive uk-text-left uk-visible@s">
+                                <tr>
+                                    <td class="uk-text-uppercase uk-text-emphasis uk-text-bold">Where?</td>
+                                    <td>Le Furet, 6 Quai de Paris, 67000 Strasbourg, France.</td>
+                                </tr>
+                                <tr>
+                                    <td class="uk-text-uppercase uk-text-emphasis uk-text-bold">For how long?</td>
+                                    <td>About 3 weeks…</td>
+                                </tr>
+                                <tr>
+                                    <td class="uk-text-uppercase uk-text-emphasis uk-text-bold">How&nbsp;?</td>
+                                    <td>+33(0)3.88.21.96.62 or send a loan request <a href="https://www.lefuret.org/emprunter-la-mallette-le-berceau-de-legalite/" target="_blank"><b>using the form</b></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="uk-text-uppercase uk-text-emphasis uk-text-bold">What are the conditions?</td>
+                                    <td>
+                                        <ul class="uk-list">
+                                            <li>Follow a free initiation for professionals borrowing the case: presentation of the approach and clarification of the notions of stereotypes - prejudice - discrimination.</li>
+                                            <li>Carry out a complete cleaning of the case before returning it (indications on the inventory provided).</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="uk-hidden@s">
+                                <p class="uk-text-lead">Call <a href="tel:+33388219662">+33(0)3.88.21.96.62</a> or send a loan request <a href="https://www.lefuret.org/emprunter-la-mallette-le-berceau-de-legalite/" target="_blank"><b>using the form</b></a></p>
+                                <p class="uk-text-left uk-text-muted uk-margin-top"><small>Conditions: Follow a free initiation for professionals borrowing the case: presentation of the approach and clarification of the notions of stereotypes - prejudice - discrimination. Carry out a complete cleaning of the case before returning it (indications on the inventory provided). Duraction: About 3 weeks… Location: Le Furet, 6 Quai de Paris, 67000 Strasbourg, France.</small></p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contact -->
+                    <section data-background="rgba(240,240,30,0.85)">
+                        <div class="uk-container">
+                            <p class="uk-text-lead">For questions and further information:</p>
+                            <a class="uk-h1 uk-text-primary uk-link" href="mailto:egalite@lefuret.org" target="_blank">egalite@lefuret.org</a>
+                            <div class="uk-margin-large-top">
+                                <a href="https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fleberceau.lefuret.org" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur Facebook !" class="uk-icon-button" uk-icon="facebook"></a>
+                                <a href="https://twitter.com/intent/tweet/?text=Le%20Berceau%20de%20l%27%C3%89galit%C3%A9%2C%20an%20educational%20kit%20to%20discover%20diversity%2C%20from%20an%20early%20age%2C%20through%20the%20senses%2C%20emotions%2C%20music%2C%20words%20and%20stories...%20%0A%0AAn%20initiative%20of%20the%20association%20Le%20Furet%20(leberceau.lefuret.org)" target="_blank" rel="nofollow noopener noreferrer" title="Share via Twitter" class="uk-icon-button" uk-icon="twitter"></a>
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fleberceau.lefuret.org&amp;title=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9&amp;summary=Le%20Berceau%20de%20l%27%C3%89galit%C3%A9%2C%20an%20educational%20kit%20to%20discover%20diversity%2C%20from%20an%20early%20age%2C%20through%20the%20senses%2C%20emotions%2C%20music%2C%20words%20and%20stories...%20%0A%0AAn%20initiative%20of%20the%20association%20Le%20Furet%20(leberceau.lefuret.org)" target="_blank" rel="nofollow noopener noreferrer" title="Share via LinkedIn" class="uk-icon-button" uk-icon="linkedin"></a>
+                                <a href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9&amp;content=Le%20Berceau%20de%20l%27%C3%89galit%C3%A9%2C%20an%20educational%20kit%20to%20discover%20diversity%2C%20from%20an%20early%20age%2C%20through%20the%20senses%2C%20emotions%2C%20music%2C%20words%20and%20stories...%20%0A%0AAn%20initiative%20of%20the%20association%20Le%20Furet%20(leberceau.lefuret.org&amp;canonicalUrl=http%3A%2F%2Fleberceau.lefuret.org&amp;shareSource=tumblr_share_button" target="_blank" rel="nofollow noopener noreferrer" title="Share via Tumblr" class="uk-icon-button" uk-icon="tumblr"></a>
+                                <a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fleberceau.lefuret.org&amp;media=http%3A%2F%2Fleberceau.lefuret.org&amp;description=Le%20Berceau%20de%20l%27%C3%89galit%C3%A9%2C%20an%20educational%20kit%20to%20discover%20diversity%2C%20from%20an%20early%20age%2C%20through%20the%20senses%2C%20emotions%2C%20music%2C%20words%20and%20stories...%20%0A%0AAn%20initiative%20of%20the%20association%20Le%20Furet%20(leberceau.lefuret.org" target="_blank" rel="nofollow noopener noreferrer" title="Share via Pinterest" class="uk-icon-button" uk-icon="pinterest"></a>
+                                <a href="https://wa.me/?text=Le%20Berceau%20de%20l%27%C3%89galit%C3%A9%2C%20an%20educational%20kit%20to%20discover%20diversity%2C%20from%20an%20early%20age%2C%20through%20the%20senses%2C%20emotions%2C%20music%2C%20words%20and%20stories...%20%0A%0AAn%20initiative%20of%20the%20association%20Le%20Furet%20(leberceau.lefuret.org" target="_blank" rel="nofollow noopener noreferrer" title="Share via WhatsApp" class="uk-icon-button" uk-icon="whatsapp"></a>
+                                <a href="mailto:?subject=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9&amp;body=Le%20Berceau%20de%20l%27%C3%89galit%C3%A9%2C%20an%20educational%20kit%20to%20discover%20diversity%2C%20from%20an%20early%20age%2C%20through%20the%20senses%2C%20emotions%2C%20music%2C%20words%20and%20stories...%20%0A%0AAn%20initiative%20of%20the%20association%20Le%20Furet%20(leberceau.lefuret.org)" title="Share via email" class="uk-icon-button" uk-icon="mail"></a>
+                            </div>
+                            <ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-small uk-text-uppercase uk-margin-medium-top">
+                                <li><a href="/">Back</a></li>
+                                <li><a href="?print-pdf">Print</a></li>
+                                <li><a href="http://www.lefuret.org/" rel="me" target="_blank">Visit <b>lefuret.org</b></a></li>
+                            </ul>
+                            <div class="uk-margin-top">
+                                <a href="mailto:contact@lefuret.org?subject=Je%20voudrais%20rejoindre%20l'%C3%A9quipe%20des%20b%C3%A9n%C3%A9voles%20!&body=Bonjour%2C%0D%0A%0D%0AJ'aimerais%20%C3%AAtre%20contact%C3%A9.e%20pour%20devenir%20b%C3%A9n%C3%A9vole." class="uk-link-toggle">
+                                    <div class="uk-visible@m">
+                                        <img class="benevoles uk-width-xlarge" data-src="img/benevoles.svg" alt="Appel à bénévoles" uk-img>
+                                    </div>
+                                    <div class="uk-hidden@m uk-visible@s">
+                                        <img class="benevoles uk-width-xlarge" data-src="img/benevoles.svg" alt="Appel à bénévoles" uk-img>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="uk-container uk-margin-large-top uk-width-xxlarge uk-visible@s">
+                                <p class="uk-text-muted uk-text-uppercase">With the support of:</p>
+                                <div class="uk-flex-row uk-flex-nowrap uk-flex-center" uk-grid>
+                                    <div><img class="partenaires uk-height-max-small" src="img/partenaires/mss.png" alt="Logo du Ministère des Solidarités et de la Santé"></div>
+                                    <div><img class="partenaires uk-height-max-small" src="img/partenaires/cget.jpg" alt="Logo du Commissariat général à l'égalité des territoires"></div>
+                                    <div><img class="partenaires uk-height-max-small" src="img/partenaires/strasbourg.png" alt="Logo de la ville de Strasbourg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+
+            </div>
+        </div>
+
+        <!-- UIkit -->
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+
+        <!-- Reveal.js -->
+        <script src="js/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+                overview: false,
+                progress: false,
+                hash: false,
+                controlsLayout: 'edges',
+                touch: false,
+                fragments: false,
+                help: false,
+                hideAddressBar: true,
+                parallaxBackgroundImage: 'img/blobs.svg',
+                parallaxBackgroundSize: '6000px 2100px',
+                width: "100%",
+                height: "100%",
+            });
+        </script>
+
+    </body>
+</html>

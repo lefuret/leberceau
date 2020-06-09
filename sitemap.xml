@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <url>
-        <loc>http://leberceau.lefuret.org/index.html</loc>
-    </url>
+	<url>
+		<loc>http://leberceau.lefuret.org/index.html</loc>
+			<xhtml:link rel="alternate" hreflang="en" href="http://leberceau.lefuret.org/en.html" />
+			<xhtml:link rel="alternate" hreflang="fr" href="http://leberceau.lefuret.org/index.html" />
+	</url>
+	<url>
+		<loc>http://leberceau.lefuret.org/en.html</loc>
+			<xhtml:link rel="alternate" hreflang="fr" href="http://leberceau.lefuret.org/index.html" />
+			<xhtml:link rel="alternate" hreflang="en" href="http://leberceau.lefuret.org/en.html" />
+	</url>
 </urlset>

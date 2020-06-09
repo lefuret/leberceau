@@ -29,21 +29,12 @@
         <meta name="application-name" content="Le Berceau de l&rsquo;&Eacute;galit&eacute;">
         <meta name="msapplication-TileColor" content="#39f">
         <meta name="msapplication-config" content="/img/icons/browserconfig.xml">
-        <meta name="theme-color" content="#fff">  
+        <meta name="theme-color" content="#fff">
 
         <!-- Feuilles de styles -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/reveal.css">
         <link rel="stylesheet" href="css/uikit.min.css">
-
-        <!-- Impression & export PDF -->
-        <script>
-            var link = document.createElement( 'link' );
-            link.rel = 'stylesheet';
-            link.type = 'text/css';
-            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-            document.getElementsByTagName( 'head' )[0].appendChild( link );
-        </script>        
 
         <!-- Polices -->
         <style type="text/css">
@@ -77,27 +68,46 @@
                 color: #333;
             }
 
-            /* Appel à bénévoles */
-            .benevoles {
-                filter: opacity(15%)
-            }
-            .benevoles:hover {
-                filter: opacity(85%)
-            }
-
             /* UIkit fix for Reveal.js */
             [hidden] {
                 display: inherit !important;
+            }
+
+            /* Custom */
+            .benevoles { -webkit-filter: opacity(15%); filter: opacity(15%); }
+            .benevoles:hover { -webkit-filter: opacity(50%); filter: opacity(50%); }
+
+            .partenaires { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+            .partenaires:hover { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
+
+            .menu {
+                position: fixed;
+                right: 30px;
+                top: 30px;
+                z-index: 9999;
             }
         </style>
     </head>
 
     <body>
+
+        <div class="menu"><a uk-toggle="target: #menu" class="uk-icon-button uk-box-shadow-large" uk-icon="world"></a></div>
+
+        <div id="menu" uk-offcanvas="overlay: true; flip: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                    <li class="uk-nav-header">English</li>
+                    <li><a href="en.html">Click here to view this presentation in English</a></li>
+                </ul>
+            </div>
+        </div>
+
         <div class="reveal">
             <div class="slides">
 
                 <!-- Accueil -->			
-                <section>
+                <section>  
                     <div class="uk-container">
                         <div class="uk-flex uk-flex-middle uk-animation-fade" uk-grid>
                             <div class="uk-width-1-3@m uk-visible@m">
@@ -119,6 +129,7 @@
                             </div>
                         </div>
                     </div>
+
                 </section>
 
                 <section>
@@ -172,7 +183,7 @@
                                 </div>
                             </div>
                         </div>
-                    </section>                
+                    </section>
 
                 </section>
 
@@ -337,7 +348,7 @@
                                         <ol>
                                             <li>Veiller au vocabulaire, aux intonations et mimiques utilisés pour décrire les sensations, afin de ne pas induire des jugements de valeur (comme beurk, whaouahou, etc.).</li>
                                             <li>Avec le tapis sensoriel, amener l’enfant à découvrir les sensations sans qu’une hiérarchisation ne lui soit suggérée.</li>
-                                            <li>Il est préférable que le tapis sendoriel soit utilisé individuellement ou en petit groupe car l’accompagnement est insdispensable.</li>
+                                            <li>Il est préférable que le tapis sensoriel soit utilisé individuellement ou en petit groupe car l’accompagnement est indispensable.</li>
                                         </ol>
                                     </li>
                                     <li class="uk-margin">
@@ -436,7 +447,7 @@
                                             <div class="uk-card uk-card-body uk-card-default uk-text-left">
                                                 <h4 class="uk-card-title">Grand-Petit</h4>
                                                 <p>Installez une banderole de papier au mur et invitez les enfants à y imprimer, avec de la peinture, l’empreinte de leur main ou de leur pied.</p>
-                                                <p>À côté, postionnez une seconde banderole à même hauteur, et invitez les parents à faire comme les enfants.</p>
+                                                <p>À côté, positionnez une seconde banderole à même hauteur, et invitez les parents à faire comme les enfants.</p>
                                             </div>
                                         </li>
                                         <li>
@@ -500,24 +511,24 @@
                             </table>
                             <div class="uk-hidden@s">
                                 <p class="uk-text-lead">Appeler le <a href="tel:0388219662">03.88.21.96.62</a> ou envoyer une demande d’emprunt <a href="https://www.lefuret.org/emprunter-la-mallette-le-berceau-de-legalite/" target="_blank"><b>via le formulaire</b></a></p>
-                                <p class="uk-text-left uk-text-muted uk-margin-top"><small>Conditions&nbsp;: Suivre une initiation d’une heure gratuite pour les professionnel.le.s empruntant la mallette&nbsp;: présentation de la démarche et clarification des notions de stéréotypes - préjugés - discrimination. Procéder à un nettoyage complet de la malette avant retour (indications sur l’inventaire fourni). Durée&nbsp;: 3 semaines environ… Où&nbsp;: À la Médiathèque du Furet, 6 Quai de Paris à Strasbourg.</small></p>
+                                <p class="uk-text-left uk-text-muted uk-margin-top"><small>Conditions&nbsp;: Suivre une initiation d’une heure gratuite pour les professionnel.le.s empruntant la mallette&nbsp;: présentation de la démarche et clarification des notions de stéréotypes - préjugés - discrimination. Procéder à un nettoyage complet de la mallette avant retour (indications sur l’inventaire fourni). Durée&nbsp;: 3 semaines environ… Où&nbsp;: À la Médiathèque du Furet, 6 Quai de Paris à Strasbourg.</small></p>
                             </div>
                         </div>
                     </section>
 
                     <!-- Contact -->
-                    <section data-background="rgba(240,240,30,0.85)">
+                    <section title="Contact" data-background="rgba(240,240,30,0.85)">
                         <div class="uk-container">
                             <p class="uk-text-lead">Pour toute question et information complémentaire&nbsp;:</p>
                             <a class="uk-h1 uk-text-primary uk-link" href="mailto:egalite@lefuret.org" target="_blank">egalite@lefuret.org</a>
                             <div class="uk-margin-large-top">
                                 <a href="https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fleberceau.lefuret.org" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur Facebook !" class="uk-icon-button" uk-icon="facebook"></a>
-                                <a href="https://twitter.com/intent/tweet/?text=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires%E2%80%A6%20Une%20initiative%20de%20l%E2%80%99association%20Le%20Furet&amp;url=http%3A%2F%2Fleberceau.lefuret.org" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur Twitter" class="uk-icon-button" uk-icon="twitter"></a>
-                                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fleberceau.lefuret.org&amp;title=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9&amp;summary=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires...%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)&amp;source=http%3A%2F%2Fleberceau.lefuret.org" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur LinkedIn" class="uk-icon-button" uk-icon="linkedin"></a>
-                                <a href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9&amp;content=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires...%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(lefuret.org)&amp;canonicalUrl=http%3A%2F%2Fleberceau.lefuret.org&amp;shareSource=tumblr_share_button" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur Tumblr" class="uk-icon-button" uk-icon="tumblr"></a>
-                                <a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fleberceau.lefuret.org&amp;media=http%3A%2F%2Fleberceau.lefuret.org&amp;description=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires...%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur Pinterest" class="uk-icon-button" uk-icon="pinterest"></a>
-                                <a href="https://wa.me/?text=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires...%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur WhatsApp" class="uk-icon-button" uk-icon="whatsapp"></a>
-                                <a href="mailto:?subject=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9&amp;body=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires...%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)" title="Partagez-moi par email" class="uk-icon-button" uk-icon="mail"></a>
+                                <a href="https://twitter.com/intent/tweet/?text=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires%E2%80%A6%20%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)&amp;url=http%3A%2F%2Fleberceau.lefuret.org" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur Twitter" class="uk-icon-button" uk-icon="twitter"></a>
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fleberceau.lefuret.org&amp;title=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9&amp;summary=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires%E2%80%A6%20%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)&amp;source=http%3A%2F%2Fleberceau.lefuret.org" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur LinkedIn" class="uk-icon-button" uk-icon="linkedin"></a>
+                                <a href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9&amp;content=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires%E2%80%A6%20%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)&amp;shareSource=tumblr_share_button" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur Tumblr" class="uk-icon-button" uk-icon="tumblr"></a>
+                                <a href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fleberceau.lefuret.org&amp;media=http%3A%2F%2Fleberceau.lefuret.org&amp;description=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires%E2%80%A6%20%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur Pinterest" class="uk-icon-button" uk-icon="pinterest"></a>
+                                <a href="https://wa.me/?text=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires%E2%80%A6%20%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)" target="_blank" rel="nofollow noopener noreferrer" title="Partagez-moi sur WhatsApp" class="uk-icon-button" uk-icon="whatsapp"></a>
+                                <a href="mailto:?subject=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9&amp;body=Le%20Berceau%20de%20l%E2%80%99%C3%89galit%C3%A9%2C%20une%20mallette%20p%C3%A9dagogique%20pour%20d%C3%A9couvrir%20la%20diversit%C3%A9%2C%20d%C3%A8s%20le%20plus%20jeune%20%C3%A2ge%2C%20%C3%A0%20travers%20les%20sens%2C%20les%20%C3%A9motions%2C%20la%20musique%2C%20les%20mots%20et%20les%20histoires%E2%80%A6%20%0A%0AUne%20initiative%20de%20l%E2%80%99association%20Le%20Furet%20(leberceau.lefuret.org)" title="Partagez-moi par email" class="uk-icon-button" uk-icon="mail"></a>
                             </div>
                             <ul class="uk-subnav uk-subnav-pill uk-flex-center uk-text-small uk-text-uppercase uk-margin-medium-top">
                                 <li><a href="/">Retour</a></li>
@@ -527,12 +538,20 @@
                             <div class="uk-margin-top">
                                 <a href="mailto:contact@lefuret.org?subject=Je%20voudrais%20rejoindre%20l'%C3%A9quipe%20des%20b%C3%A9n%C3%A9voles%20!&body=Bonjour%2C%0D%0A%0D%0AJ'aimerais%20%C3%AAtre%20contact%C3%A9.e%20pour%20devenir%20b%C3%A9n%C3%A9vole." class="uk-link-toggle">
                                     <div class="uk-visible@m">
-                                        <img class="benevoles uk-width-medium" data-src="img/benevoles.svg" alt="Appel à bénévoles" uk-img>
+                                        <img class="benevoles uk-width-xlarge" data-src="img/benevoles.svg" alt="Appel à bénévoles" uk-img>
                                     </div>
                                     <div class="uk-hidden@m uk-visible@s">
-                                        <img class="benevoles uk-width-medium" data-src="img/benevoles.svg" alt="Appel à bénévoles" uk-img>
+                                        <img class="benevoles uk-width-xlarge" data-src="img/benevoles.svg" alt="Appel à bénévoles" uk-img>
                                     </div>
                                 </a>
+                            </div>
+                            <div class="uk-container uk-margin-large-top uk-width-xxlarge uk-visible@s">
+                                <p class="uk-text-muted uk-text-uppercase">Avec le soutien de&nbsp;:</p>
+                                <div class="uk-flex-row uk-flex-nowrap uk-flex-center" uk-grid>
+                                    <div><img class="partenaires uk-height-max-small" src="img/partenaires/mss.png" alt="Logo du Ministère des Solidarités et de la Santé"></div>
+                                    <div><img class="partenaires uk-height-max-small" src="img/partenaires/cget.jpg" alt="Logo du Commissariat général à l'égalité des territoires"></div>
+                                    <div><img class="partenaires uk-height-max-small" src="img/partenaires/strasbourg.png" alt="Logo de la ville de Strasbourg"></div>
+                                </div>
                             </div>
                         </div>
                     </section>
